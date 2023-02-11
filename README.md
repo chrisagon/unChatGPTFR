@@ -1,26 +1,26 @@
 <div align="center"><img src="https://github.com/riccardolinares/unChatGPT/blob/main/unChatGPT_screenshot.png?raw=true" width="50%"></div>
 
-# unChatGPT
+# unChatGPTFR
 
-unChatGPT is a powerful tool that uses the OpenAI API to create a chatbot-like chat experience. It allows users to converse with an AI-based chatbot, similar to ChatGPT, but without the need to wait in a queue or have limited access. unChatGPT is designed to provide an easy and efficient way to chat with an AI-based chatbot in a fast and intuitive way.
+unChatGPTFR est la version FR de unChatGPT. C'est une interface web qui utilise l'API OpenAI pour créer une expérience de chatbot. Il permet aux utilisateurs de converser avec un chatbot basé sur l'IA, de manière similaire à ChatGPT, mais sans avoir à attendre dans une file d'attente ou à avoir un accès limité. unChatGPT est conçu pour fournir un moyen facile et efficace de discuter avec un chatbot basé sur l'IA de manière rapide et intuitive.
 
 <div align="center"><a href="https://www.producthunt.com/posts/unchatgpt?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-unchatgpt" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=377698&theme=light" alt="unChatGPT - ChatGPT&#0032;is&#0032;at&#0032;capacity&#0063;&#0032;Use&#0032;the&#0032;OpenAI&#0032;API&#0032;with&#0032;unChatGPT | Product Hunt" style="width: 250px; height: 54px;" width="250" height="54" /></a></div>
 
-## Getting Started
+## Démarrage
 
-### Install dependencies
+### Installer les dependences
 
-To get started with unChatGPT, clone the repository and install the dependencies:
+Pour commencer avec unChatGPT, clonez le dépôt et installez les dépendances :
 
 ```
 git clone
-cd unChatGPT
+cd unChatGPTFR
 npm install
 ```
 
-### Create an OpenAI API Key
+### Créer une clé API OpenAI
 
-unChatGPT uses the OpenAI API to generate responses. To use the OpenAI API, you must create an API key. To create an API key, follow the instructions on the [OpenAI website](https://platform.openai.com/account/api-keys).
+unChatGPT utilise l'API OpenAI pour générer des réponses. Pour utiliser l'API OpenAI, vous devez créer une clé API. Pour créer une clé API, suivez les instructions sur le [site web OpenAI] (https://platform.openai.com/account/api-keys).
 
 ### Environment Variables
 
@@ -36,25 +36,25 @@ and add your OpenAI API key to the file:
 ```
 OPENAI_API_KEY      (required)
 OPENAI_MODEL        (optional, default: "text-davinci-003")
-OPENAI_MAX_TOKENS   (optional, default: "257")
+OPENAI_MAX_TOKENS   (optional, default: "3840")
 ```
 
 ## Usage
 
-To start the chatbot, run the following command:
+Pour démarrer le chatbot, exécutez la commande suivante :
 
 ```
 npm run build
 npm run start
 ```
 
-or if you want to use the development version:
+ou si vous souhaitez utiliser la version de développement :
 
 ```
 npm run dev
 ```
 
-The chatbot will start and you can begin interacting with it. To stop the chatbot, press Ctrl+C.
+Le chatbot démarre et vous pouvez commencer à interagir avec lui. Pour arrêter le chatbot, appuyez sur Ctrl+C.
 
 ## Disclaimer
 
