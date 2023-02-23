@@ -1,4 +1,4 @@
-<div align="center"><img src="https://github.com/riccardolinares/unChatGPT/blob/main/unChatGPT_screenshot.png?raw=true" width="50%"></div>
+<div align="center"><img src="https://github.com/chrisagon/unChatGPTFR/blob/main/chatgpt3000.png?raw=true" width="50%"></div>
 
 # unChatGPTFR 3000
 
