@@ -64,9 +64,9 @@ export default function Home() {
       <div className="h-screen flex flex-col">
         <div className="top bg-gray-50 py-5">
           <div className="flex flex-col items-center justify-center w-full max-w-md mx-auto ">
-            <div className="text-2xl font-bold text-gray-700">unChatGPT</div>
+            <div className="text-2xl font-bold text-gray-700">Mon ChatGPT Perso</div>
             <div className="text-sm font-medium text-gray-700">
-              When the original ChatGPT is at capacity
+              Bienvenue sur notre ChatGPT maison
             </div>
           </div>
           <div className="flex flex-row items-center justify-end h-auto px-10 inline-block align-middle">
@@ -92,13 +92,13 @@ export default function Home() {
             (item: { value: string; completion: string }, index: number) => (
               <div key={`message-${index.toString()}`}>
                 <div className="flex flex-col w-full space-y-2 py-3 px-32 border-b-2">
-                  <div className="text-sm font-medium text-gray-700">You</div>
+                  <div className="text-sm font-medium text-gray-700">Notre demande </div>
                   <div className="message-user text-gray-700 mx-10 whitespace-pre-wrap">
                     <p>{item.value.trim()}</p>
                   </div>
                 </div>
                 <div className="flex flex-col w-full space-y-2 py-3 px-32 border-b-2">
-                  <div className="text-sm font-medium text-gray-700 ">Bot</div>
+                  <div className="text-sm font-medium text-gray-700 ">Réponse du ChatBot</div>
                   <div className="message-bot text-gray-500 mx-10 whitespace-pre-wrap">
                     <p>{item.completion.trim()}</p>
                   </div>
@@ -110,18 +110,18 @@ export default function Home() {
 
         <div className="flex flex-col items-center justify-center w-full max-w-lg mx-auto space-y-4 mt-5 mb-10 h-auto">
           <input
-            value={isLoading ? "Loading... " : value}
+            value={isLoading ? "Un instant...Je réfléchis... " : value}
             onChange={handleInput}
             onKeyDown={handleKeyDown}
             className={`${
               isLoading ? "bg-gray-100 text-gray-500" : "bg-white"
             } w-full px-4 py-2 border border-gray-300 rounded-md focus:ring-2 focus:ring-blue-600 focus:border-transparent`}
-            placeholder="Enter a prompt and press Enter to send"
+            placeholder="Entrez votre demande et pressez sur Entrée pour envoyer"
             disabled={isLoading}
           />
         </div>
         <div className="text-sm text-center font-medium text-gray-400 mb-2">
-          This is a demo of OpenAI's GPT-3 API. It's not affiliated with OpenAI
+          Ceci est une demo qui utilise l API de OpenAI. It's not affiliated with OpenAI
           in any way.
         </div>
       </div>
